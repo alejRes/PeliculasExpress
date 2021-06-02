@@ -7,6 +7,10 @@ const pages = {
 
 
     },
+    postFilm: (req,res)=>{
+
+
+    }
 }
 
 module.exports = pages;
