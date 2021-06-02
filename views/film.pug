@@ -4,14 +4,26 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/public/style.css")
         title Film
     body 
-        p Titulo: #{peli.Title}
-        p Año: #{peli.Year}
-        p Estreno: #{peli.Released}
-        p Duración: #{peli.Runtime}
-        p Género: #{peli.Genre}
-        p Actores: #{peli.Actors}
-        p Sinopsis: #{peli.Plot}
-        img(src= peli.Poster, alt="cartelera") 
-        p Premios: #{peli.Awards}   
+        h1 Información sobre la película #{peli.Title}
+        main
+            p Titulo: 
+                span  #{peli.Title}
+            p Año:
+                span  #{peli.Year}
+            p Estreno:
+                span  #{peli.Released}
+            p Duración:
+                span  #{peli.Runtime}
+            p Género:
+                span  #{peli.Genre}
+            p Actores:
+                span  #{peli.Actors}
+            p Sinopsis:
+                span  #{peli.Plot}
+            p Premios:
+                span  #{peli.Awards}  
+            img(src= peli.Poster, alt="cartelera") 
+         
