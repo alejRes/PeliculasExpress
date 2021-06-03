@@ -1,3 +1,4 @@
+require('dotenv').config()//esto sacado de la web de environment files .env
 
 const express = require('express')
 const router = require ('./controllers/index')

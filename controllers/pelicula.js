@@ -1,5 +1,3 @@
-
-const apikey = require ('../config');
 const peli = require ('../utils/peli');
 
 const routes = {
@@ -9,7 +7,8 @@ const routes = {
         //Se utiliza un módulo externo llamado peli en el cual hay una función que se llama getPeli que es la que 
         // hace el fetch
         let t= req.params.title;
-        let data = await peli.getPeli(`http://www.omdbapi.com/?apikey=${apikey.key}&t=${t}`)
+        
+        let data = await peli.getPeli(`http://www.omdbapi.com/?apikey=${process.env.API_KEY}&t=${t}`)
         
         //console.log([peli])
         // res.send([peli][0].Title)
