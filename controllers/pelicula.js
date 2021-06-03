@@ -1,5 +1,3 @@
-
-const apikey = require ('../config');
 const peli = require ('../utils/peli');
 
 const routes = {

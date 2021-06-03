@@ -1,4 +1,3 @@
-const apikey = require('../config');
 const fetch = require ('node-fetch');
 
 
