@@ -6,7 +6,7 @@ const routerApi = require('./controllers/routerApi')
 const app = express()
 
 
-const port = 3000
+const port = process.env.PORT || 3000
 app.use("/public", express.static("public"))//enlace de css simepre por encima de los motores de visualización
 
 app.set('view engine','pug')
