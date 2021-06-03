@@ -1,5 +1,6 @@
 const fetch = require ('node-fetch');
 
+
 const pages = {
     home: (req, res) =>{
         res.status(200).render('home');
@@ -7,7 +8,8 @@ const pages = {
 
     film: async (req,res) =>{
 
-        //DE esta forma se ejecuta el fetch cuando la ruta llama a la función film
+
+        //DE esta forma se ejecuta el fect cuando la ruta llama a la función getFilm
         let t= req.params.title;
         let response = await fetch(`http://www.omdbapi.com/?apikey=${process.env.API_KEY}&t=${t}`);
         let peli= await response.json()
